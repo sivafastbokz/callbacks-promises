@@ -126,72 +126,119 @@
 // myResult(checkExamResult)
 
 
-function mytransactions(status,accountholder){
-    prompt('enter your status')
-    if(status == "vaild")
-    {
-        console.log('your transations begins here')
-        accountholder('siva',chooseaccount)
-    }else if(status == "Invaild") 
-     {
-        console.log('your transactions ends here')
-        return
-     }else{
-        console.log('your transactions ends here')
-        return
-        accountholder(chooseaccount)
-     }
+// function mytransactions(status,accountholder){
+//     prompt('enter your status')
+//     if(status == "vaild")
+//     {
+//         console.log('your transations begins here')
+//         accountholder('siva',chooseaccount)
+//     }else if(status == "Invaild") 
+//      {
+//         console.log('your transactions ends here')
+//         return
+//      }else{
+//         console.log('your transactions ends here')
+//         return
+//         accountholder(chooseaccount)
+//      }
+// }
+
+// function message(){
+//     console.log('thank you visit again')
+// }
+// function withdraw(messageoftrans){
+//     prompt('enter the amount to withdraw')
+//     console.log('withdraw is successfull')
+//     messageoftrans()
+// }
+
+// function atmpin(pinnum,withdrawtheamount){
+//     pinnum=prompt('enter the pin')
+//     if(pinnum==='8585'){
+//     console.log('pinnumber entered successfully')    
+//     withdrawtheamount(message)
+//     } else if(pinnum ==='')
+//     {   
+     
+//     }else { 
+//      console.log('oops looks like you entered the incorrect pin number')
+//     return
+//     }
+// }
+// function chooseaccount(enterthepin){
+//     confirm('sure you want choose the savings account?')
+//     enterthepin('8585',withdraw)
+// }
+
+// function accountholder(name,choosetheaccount){
+//         name=prompt('enter the accountholder name')
+//         if(name == 'siva')
+//         {   
+//         console.log(`welcome ${name}`)
+//         choosetheaccount(atmpin)
+//         }else if(name == '') 
+//         {
+        
+//         }else{
+//             console.log('accountholder name is not correct')   
+//             return   
+//             choosetheaccount(atmpin)
+//         }
+// }
+ 
+
+//  mytransactions("vaild",accountholder)
+
+
+
+
+//settimeout and setinterval
+function mytransaction(accountholder){
+     setTimeout(() => {
+        console.log('your transactions being here')
+     }, 1000);
+    accountholder(chooseaccount)
+    
 }
 
 function message(){
-    console.log('thank you visit again')
-}
-function withdraw(messageoftrans){
-    prompt('enter the amount to withdraw')
-    console.log('withdraw is successfull')
-    messageoftrans()
+    setTimeout(() => {
+        console.log('thank you visit again')
+    }, 16000);
 }
 
-function atmpin(pinnum,withdrawtheamount){
-    pinnum=prompt('enter the pin')
-    if(pinnum==='8585'){
-    console.log('pinnumber entered successfully')    
+
+function withdraw(withdrewmsg){
+   setTimeout(() => {
+      console.log('withdraw successfull')
+   }, 13000);
+    withdrewmsg()
+}
+
+
+function atmpin(withdrawtheamount){
+    setTimeout(() => {
+        console.log('enter the pin')
+    }, 10000);
     withdrawtheamount(message)
-    } else if(pinnum ==='')
-    {   
-     
-    }else { 
-     console.log('oops looks like you entered the incorrect pin number')
-    return
-    }
 }
+
+
 function chooseaccount(enterthepin){
-    confirm('sure you want choose the savings account?')
-    enterthepin('8585',withdraw)
+    setTimeout(() => {
+        console.log('sure you want to choose the savings account?')
+    }, 7000);
+    enterthepin(withdraw)
 }
 
-function accountholder(name,choosetheaccount){
-        name=prompt('enter the accountholder name')
-        if(name == 'siva')
-        {   
-        console.log(`welcome ${name}`)
-        choosetheaccount(atmpin)
-        }else if(name == '') 
-        {
-        
-        }else{
-            console.log('accountholder name is not correct')   
-            return   
-            choosetheaccount(atmpin)
-        }
+function accountholder(choosetheaccount){
+    setTimeout(() => {
+        console.log('welcome bob')
+    }, 4000);
+    choosetheaccount(atmpin)
 }
- 
 
-mytransactions("vaild",accountholder)
-
-
-
-
+mytransaction(accountholder)
 
 
 
