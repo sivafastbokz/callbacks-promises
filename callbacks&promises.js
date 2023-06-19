@@ -448,39 +448,40 @@ const studentList = [
 
 // let bestSocre = -Infinity;
 // let worstSocre = Infinity;
+// let nameUser = ['siva','ranjith','monj']
 
-// studentList.forEach((results)=>{
-//     [90,39,45,93,38].
-//     forEach((socre)=>{
-//         console.log(socre)
-//         if(socre.marks > bestSocre){
-//            bestSocre = socre.marks       
-//         }
-//         if(socre.marks < worstSocre){
-//             worstSocre = socre.marks
-//         }
-//     })
-//     console.log({name:results.name,bestSocerdSubject:bestSocre,worstSocredSubject:worstSocre})
+// nameUser.forEach((result,index)=>{
+//     console.log("test",result,index)
+// //     forEach((socre)=>{
+// //         console.log(socre)
+// //         if(socre.marks > bestSocre){
+// //            bestSocre = socre.marks       
+// //         }
+// //         if(socre.marks < worstSocre){
+// //             worstSocre = socre.marks
+// //         }
+// //     })
+// //     console.log({name:results.name,bestSocerdSubject:bestSocre,worstSocredSubject:worstSocre})
+//  })
+
+//  let bestSocre = -Infinity;
+//  let worstSocre = Infinity;
+
+// let arr=[90,39,45,93,38]
+//   arr.forEach((socre)=>{
+//     //  console.log(socre)
+//     if(socre > bestSocre){
+//         //  console.log(socre)
+//         //  console.log(bestSocre)
+//        bestSocre = socre 
+//       console.log(bestSocre,socre)     
+//     }
+//     if(socre < worstSocre){
+//         //  console.log(worstSocre)
+//         worstSocre = socre
+//         console.log(worstSocre,socre)
+//     }
 // })
-
- let bestSocre = -Infinity;
- let worstSocre = Infinity;
-
-let arr=[90,39,45,93,38]
-  arr.forEach((socre)=>{
-    //  console.log(socre)
-    if(socre > bestSocre){
-        //  console.log(socre)
-        //  console.log(bestSocre)
-       bestSocre = socre 
-      console.log(bestSocre,socre)     
-    }
-    if(socre < worstSocre){
-        //  console.log(worstSocre)
-        worstSocre = socre
-        console.log(worstSocre,socre)
-    }
-})
 
 
 // score 90 bestScore  90 > -In true bestScore 
@@ -494,5 +495,212 @@ let arr=[90,39,45,93,38]
 //following the condition it takes the lowest value whuch is 38
 
 
+// var evennumbers = [1,2,3,4,5,6,7,8,9,10]
+//  var even = []
+
+//  for(let i = 0; i < evennumbers.length;i++) {
+//     if(evennumbers[i] % 2==0){
+//         even.push(evennumbers[i])
+//     }
+//  }
+//     console.log(even) 
 
 
+// function number1(number2){
+//     console.log('this is number one')
+//      number2(number3)
+// }
+
+// function number2(number3){
+//     console.log('this is number two')
+//      number3(number4)
+// }
+// function number3(number4){
+//     console.log('this is number three')
+//     number4(number5)
+// }
+// function number4(number5){
+//     console.log('this is number four')
+//     number5(number6)
+// }
+
+// function number5(number6){
+//     console.log('this is number five')
+//     number6()
+// }
+// function number6(){
+//     console.log('this is number six and last function')
+// }
+// number1(number2)
+
+
+// map function
+
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const num = numbers.map((test)=> test / 2)
+// console.log(num)
+// const num1 = (Math.max(...numbers))
+// console.log(num1)
+
+// for (let i = 0; i < 10; i++) {
+
+//     if(numbers[i] % 2 !== 0){
+//     console.log( numbers[i])
+//     }
+    
+// }
+
+
+
+// for (const num of numbers) {
+//     console.log(num)
+// }
+//  for (let neumeric in numbers){
+//     console.log(neumeric,numbers[neumeric])
+//  }
+//  const msg =10
+//  for(let i =0; i<msg;i++){
+//       console.log('hello world')
+//  }
+
+//  for (let i =1; i <10; i+=2){
+//     console.log('the odd numbers are ' + i)
+     
+//  }
+//  for (let i =2; i <10; i+=2){
+//     console.log('the even numbers are '+ i)
+//  }
+
+//  let evenNumbers = [22,34,56,74,89,32,53,21]
+//  for(let i = 0;i< 100;i++){
+//     if(evenNumbers[i] % 2 == 0){
+//         console.log(evenNumbers[i])
+//     }
+
+//  }
+
+ for(let i=2;i<=20; i+=2){
+    console.log('the even numbers '+ i)
+ }
+
+ const studentsName = ['siva','messi','ronaldo','bruno','muller']
+
+ for(let i = 0;i < studentsName.length;i++){
+    console.log(studentsName[i])
+ }
+
+ studentsName.forEach(names=>{
+    console.log(names)
+ })
+
+//  let pin = '12345';
+//  let attempts = 4;
+
+//  while(attempts>0){
+//     const guess = prompt('enter  your password to login into your account')
+//     if(guess === pin){
+//         alert('you have successfully loged in')
+//         break;
+//     }else{
+//         alert(`sorry! your password is worng now you have only ${attempts--} attempts`)
+//         // attempts--;
+//     }
+    
+//  }
+//  if(attempts===0){
+//     alert('sorry! your have tired all of your four attempts, please try again later')
+//  }
+
+
+//  studentList.forEach((obj)=>{
+//     obj.examResults.forEach(marks=>{
+//          console.log(marks)
+        
+//     })
+//  })
+
+//  const result = studentList[0].examResults
+//  console.log(result)
+
+//  const filteredmarks = studentList.filter(obj=>{
+//     obj.examResults.filter(marks=>{
+//         marks.marks > 90
+//     })
+    
+//  })
+//  console.log(filteredmarks)
+
+//  studentList[0].examResults.forEach(marks=>{
+//     console.log(marks)
+// })
+
+// const filteredaMarks = studentList[0].examResults.filter(higherMarks=>{
+//    return  higherMarks.marks >= 90
+
+// })
+// console.log(filteredaMarks)
+
+
+//loops concepts
+
+let intiger =[22,33,45,67,82,94,29,98,86,96,50,65,125,25,55,88];
+let valueAbove90 = [];
+let valueLess30 = [];
+let evenNumbers = [];
+let oddNumbers = [];
+
+for(let i =0; i<intiger.length;i++){
+    if(intiger[i]>90){
+        valueAbove90.push(intiger[i])
+    }
+}
+console.log(valueAbove90)
+
+
+for(let i =0; i<intiger.length;i++){
+    if(intiger[i]<30){
+       valueLess30.push(intiger[i])
+    }
+}
+console.log(valueLess30)
+
+intiger.forEach(even=>{
+    if(even % 2 == 0){
+        evenNumbers.push(even)
+    }
+})
+console.log(evenNumbers)
+
+intiger.forEach(odd=>{
+    if(odd % 2 !== 0){
+        oddNumbers.push(odd)
+    }
+})
+console.log(oddNumbers)
+
+for(let divid of intiger){
+    console.log(divid / 2)
+}
+for (let num in intiger){
+    console.log(num,intiger[num])
+}
+
+
+for(let i = 0; i <=6; i++){
+ console.log('for loop number' + i)
+}
+
+let num = 0;
+while(num < 10){
+    console.log('while loop numbers'+num)
+    num++
+}
+let i = 10
+
+do{
+    if(i % 2 ==0){
+        console.log('do-while number '+i);
+    }
+    i++;
+}while(i<10)
