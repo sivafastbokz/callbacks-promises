@@ -704,3 +704,152 @@ do{
     }
     i++;
 }while(i<10)
+
+// let arr = 5
+// let num1 ="" 
+
+// for(let i =0; i <arr;i++){ // columns
+//     for(let s = 0;s <arr;s++){ // rows
+//         num1 += " siva "
+//     }
+//     num1 +="\n"
+// }
+// console.log(num1)
+
+let n = 4;
+let string = "";
+
+for(let i = 0; i<n; i++){
+    console.log('firstloop',i)
+    for(let l = 0; l <n; l++){
+        console.log('secondloop',l)
+        for(let m = 0; m <n; m++){
+            console.log('thirdloop',m)
+            string = string + " * "
+        }
+    }
+    
+    string = string + "\n"
+}
+console.log(string)
+
+//in the first loop the i has the value of 0,1,2,3,4 and the n has the value of 4 if the condition is true the code is executed.
+//if false the code is blocked and it creates a columns of *. in the second loop prints the  value  if the condition is true it executes in rows if the condition is false it blockes the code
+//in the first loop when the value of i is 0 the value of l will be 0,1,2,3 
+
+var m = 5;
+let string2 = "";
+ 
+for(let i = 0; i<=m; i++){
+    // console.log('firstloop',i)
+
+    for(let k =0; k<=i; k++){
+        // console.log('secondloop',k)
+          string2  = string2 + " * "
+    }
+//     for(let j = 0; j<m;j++){
+//         // console.log('thirdloop',j)
+//         string2 = string2 + "  "
+//    }
+    string2 = string2 + "\n"
+}
+console.log(string2)
+
+
+var s = 5;
+let string3 = "";
+
+for(let i =0; i<=s;i++){
+
+    for(var a = 0; a<=s-i;a++){
+        string3 = string3 + " * "
+    }
+    string3 = string3 + "\n"
+}
+console.log(string3)
+
+
+var p = 5;
+let string4 = "";
+
+for(let i=0;i<=p;i++){
+    // console.log('firstloop',i)
+    // string4 += " * "
+    for(let v =0; v<=p;v++){
+        // console.log('secondloop',v)
+        string4 += " * "
+    }
+    
+    string4 += "\n"
+}
+console.log(string4)
+
+var t =6;
+let string5 = ""
+for(let i = 0; i<=t;i++){
+   for(let h = 0;h<=t-i;h++){
+    string5 +="    "
+   }
+   for(let x = 0; x<t-i; x++){
+    string5+= " * "
+   }
+   string5 +="\n"
+}
+console.log(string5)
+
+// var u = 5;
+// var string6 ="";
+
+// for(let i = 0; i<=u; i++){
+//     console.log('firstloop',i)
+//     for(let c =0; c<=u-i; c++){
+//         console.log('secondloop',c)
+//         string6 += " "
+//     }
+//     for(let a =0; a<=2*i-i; a++){
+//         console.log('thirdloop',a)
+//         string6 +=" * "
+//     }
+//     string6 += "\n"
+// }
+// console.log(string6)
+
+// var r = 5;
+// var string7 = "";
+
+// for(let i = 0; i <=r; i++){
+//     for(ler g = 0; g<=2*i-i)
+// }
+
+function reverseStr(str){
+    var emptyStr = '';
+    for(let i = str.length-1;i>=0;i--){
+        emptyStr += str[i]
+    }
+    return emptyStr;
+}
+console.log(reverseStr('siva'))
+
+function inBuilt(str){
+    // var string = '';
+   return str.split('').reverse().join('')
+    // return str
+
+}
+console.log(inBuilt('hello'))
+
+var sum = 0;
+for(let i = 0; i<intiger.length;i++){
+    sum += intiger[i]
+}
+console.log(sum)
+
+var numberPattern = 8;
+var printNumber = ''
+for(let i = 0; i<=numberPattern;i++){
+    for(let b=0;b<=i;b++){
+        printNumber += b+ ""
+    }
+    printNumber += "\n";
+}
+console.log(printNumber)
