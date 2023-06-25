@@ -797,29 +797,22 @@ for(let i = 0; i<=t;i++){
 }
 console.log(string5)
 
-// var u = 5;
-// var string6 ="";
+var u = 5;
+var string6 ="";
 
-// for(let i = 0; i<=u; i++){
-//     console.log('firstloop',i)
-//     for(let c =0; c<=u-i; c++){
-//         console.log('secondloop',c)
-//         string6 += " "
-//     }
-//     for(let a =0; a<=2*i-i; a++){
-//         console.log('thirdloop',a)
-//         string6 +=" * "
-//     }
-//     string6 += "\n"
-// }
-// console.log(string6)
-
-// var r = 5;
-// var string7 = "";
-
-// for(let i = 0; i <=r; i++){
-//     for(ler g = 0; g<=2*i-i)
-// }
+for(let i = 0; i<=u; i++){
+    // console.log('firstloop',i)
+    for(let c =0; c<=u-i; c++){
+        // console.log('secondloop',c)
+        string6 += " "
+    }
+    for(let a =0; a<=2*i-i; a++){
+        // console.log('thirdloop',a)
+        string6 +=" * "
+    }
+    string6 += "\n"
+}
+console.log(string6)
 
 function reverseStr(str){
     var emptyStr = '';
@@ -853,3 +846,75 @@ for(let i = 0; i<=numberPattern;i++){
     printNumber += "\n";
 }
 console.log(printNumber)
+
+let Stringg = ['qewefr','efwew','efwefw4ggty','ewfwegf','ewfwrgw'];
+let longestString ='';
+
+Stringg.forEach((item)=>{
+    if(item.length>longestString.length){
+        longestString = item
+    }
+})
+console.log(longestString)
+
+
+var q =5;
+var pattern = "";
+
+for(let i = 0;i<=q;i++){
+    for(let c = 0;c<=q;c++){
+        pattern +=" * "
+    }
+    pattern +="\n"
+}
+console.log(pattern)
+
+for(let i = 1;i<=10;i++){
+    if(i % 2 ==0){
+        console.log(i)
+    }
+}
+
+var list = [
+	 
+    {
+       "firstName": "Kiran",
+       "lastName" : "Kumar",
+       "salary"   : 25000
+       },
+    {
+       "firstName": "Mohan",
+       "lastName" : "Srivastav",
+       "salary"   : 20000
+      },
+    {
+       "firstName": "Mary",
+       "lastName" : "Kom",
+       "salary"   : 23000
+       }
+];
+
+list.forEach(details=>{
+    console.log(details.firstName)
+})
+
+let journal = [
+    {events: ["work", "touched tree", "pizza",
+              "running", "television"],
+     squirrel: false},
+    {events: ["work", "ice cream", "cauliflower",
+              "lasagna", "touched tree", "brushed teeth"],
+     squirrel: false},
+    {events: ["weekend", "cycling", "break", "peanuts",
+              "beer"],
+     squirrel: true},
+ ];
+
+ journal.forEach((news)=>{
+     const work = news.events;
+     console.log(work)
+ })
+
+ const firstIndex = journal[0].events;
+ console.log(firstIndex);
+ 
