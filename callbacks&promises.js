@@ -912,9 +912,16 @@ let journal = [
 
  journal.forEach((news)=>{
      const work = news.events;
-     console.log(work)
+    //  console.log(work)
  })
 
  const firstIndex = journal[0].events;
- console.log(firstIndex);
+//  console.log(firstIndex);
  
+
+ const word = 'learning the split function'
+ const test = word.split(' ')
+ console.log(test)
+
+ const token = 'Bearer siva'
+ console.log(token.split(' ')[1])
