@@ -256,7 +256,7 @@
 //           resolve(accountholder);
 //     })
 //     .then((accountholdername)=>{
-//         accountholdername(chooseaccount)
+//         accountholdername(accountholder)
 //     })
 // }
 
@@ -318,7 +318,7 @@
 //         resolve(chooseaccount);
 //     })
 //     .then((choosetheaccount)=>{
-//         choosetheaccount(atmpin)
+//         choosetheaccount(chooseaccount)
 //     })
 // }
 
@@ -925,3 +925,75 @@ let journal = [
 
  const token = 'Bearer siva'
  console.log(token.split(' ')[1])
+
+
+
+//  callbacks
+
+// function one(two){
+//     console.log('this is function one')
+//     two(three)
+// }
+
+
+// function three(four){
+//     console.log('this is function three')
+//     four(five)
+// }
+
+// function four(five){
+//     console.log('this is function four')
+//     five(six)
+// }
+
+// function five(six) {
+//     console.log('this is function five')
+//     six()
+// }
+
+// function six(){
+//     console.log('this is the last function ')
+    
+// }
+
+// function two(three){
+//     console.log('this is function two')
+//     three(four)
+// }
+
+
+// one(two)
+
+
+function one(two){
+    console.log('one')
+    two(three)
+    // console.log(two)
+}
+
+
+function two(three){
+    console.log('two')
+    three(four)
+}
+
+function three(four){
+    console.log('three')
+    four(five)
+}
+
+function four(five){
+    console.log('four')
+    five(six)
+}
+
+function  five(six) {
+    console.log('five')
+    six()
+}
+
+function six(){
+    console.log('six and this last function')
+}
+
+one(two)
