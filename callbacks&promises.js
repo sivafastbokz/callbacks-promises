@@ -997,3 +997,23 @@ function six(){
 }
 
 one(two)
+
+
+// this = A reference to the object that
+//        we're currently working with
+
+
+class car{
+    constructor(make,model){
+        this.make = make,
+        this.model = model
+    }
+    carDetails(){
+        return this;
+     }
+}
+
+const car1 = new car('ford','mustang')
+const car2 = new car('duster','renault')
+
+console.log(car1.carDetails())
